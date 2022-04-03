@@ -1,0 +1,11 @@
+query ProductLite {
+  products {
+    title
+    images
+    id
+    merchant
+    _count {
+      purchases
+    }
+  }
+}

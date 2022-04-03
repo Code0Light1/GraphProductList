@@ -1,0 +1,14 @@
+query ProductDetails($where: ProductWhereInput, $skip: Int, $orderBy: [ProductOrderByWithRelationInput!]) {
+  products(where: $where, skip: $skip, orderBy: $orderBy) {
+    createdAt
+    title
+        id
+    merchant
+    _count {
+      purchases
+    }
+    images
+    updatedAt
+    url
+  }
+}
